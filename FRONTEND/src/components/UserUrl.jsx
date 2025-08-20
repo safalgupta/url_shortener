@@ -98,7 +98,9 @@ const UserUrl = () => {
                 </td>
                 <td className="px-6 py-4 text-sm font-medium">
                   <button
-                    onClick={() => handleCopy(`http://localhost:3000/${url.short_url}`, url._id)}
+                    // onClick={() => handleCopy(`http://localhost:3000/${url.short_url}`, url._id)}
+                    onClick={() => handleCopy(`https://url-shortener-backend-3rcb.onrender.com/${url.short_url}`, url._id)}
+
                     className={`inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md shadow-sm ${
                       copiedId === url._id
                         ? 'bg-green-600 text-white hover:bg-green-700'
